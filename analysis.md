@@ -1,0 +1,3 @@
+# Analysis: Stacks and Queues
+
+A linked-list stack pushes at the head because the head can be updated directly, so each push takes O(1) time. Popping from the head is also O(1), because no traversal is needed to find the element. If the stack used the tail of a singly linked list, the program would need to traverse the list to find the node before the tail, making removal O(n). An array queue must be circular so that positions freed by dequeue operations can be reused when the rear reaches the end of the array. The modulo operator wraps the front and rear indices back to the beginning while keeping enqueue and dequeue operations O(1).
